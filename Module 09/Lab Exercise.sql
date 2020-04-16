@@ -6,7 +6,7 @@ Set Nocount On;
 Begin
 	Select Distinct p.Color
 	From Marketing.Product as p
-	Where p.Color in not null
+	Where p.Color is not null
 	Order By p.Color;
 End
 
